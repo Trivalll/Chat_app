@@ -1,13 +1,11 @@
-import 'package:chat_app3/pages/chatpage.dart';
-import 'package:chat_app3/pages/home.dart';
-import 'package:chat_app3/pages/signin.dart';
-import 'package:chat_app3/pages/signup.dart';
-import 'package:firebase_core/firebase_core.dart';
+
+
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/pages/signup.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  /*WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();*/
   runApp(const MyApp());
 }
 
@@ -21,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
+        // This is the theme of your applica();tion.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
         // the application has a purple toolbar. Then, without quitting the app,
@@ -39,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ChatPage(),
+      home: const SignUp(),
     );
   }
 }

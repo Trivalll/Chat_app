@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 
 class SignUp extends StatefulWidget {
@@ -8,6 +10,39 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
+  /*String email = "", password = "", name = "", confirmPassword = "";
+
+  TextEditingController nameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+  TextEditingController confirmPasswordController = TextEditingController();
+
+  final _formKey = GlobalKey<FormState>();
+
+  registration() async {
+    if (password != null && password == confirmPassword) {
+      try {
+        UserCredential userCredential = await FirebaseAuth.instance
+            .createUserWithEmailAndPassword(email: email, password: password);
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(
+            'Registered Successfully',
+            style: TextStyle(fontSize: 20.0),
+          ),
+        ));
+      } on FirebaseAuthException catch (e) {
+        if (e.code == 'weak-password') {
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+            content: Text(
+              'Password Provider is too Weak',
+              style: TextStyle(fontSize: 18.0),
+            ),
+          ));
+        }
+      }
+    }
+  }*/
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +50,7 @@ class _SignUpState extends State<SignUp> {
         child: Stack(
           children: [
             Container(
-                height: MediaQuery.of(context).size.height / 4.0,
+                height: MediaQuery.of(context).size.height / 3.5,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                     gradient: LinearGradient(
@@ -26,7 +61,7 @@ class _SignUpState extends State<SignUp> {
                         bottom: Radius.elliptical(
                             MediaQuery.of(context).size.width, 105.0)))),
             Padding(
-              padding: const EdgeInsets.only(top: 70.0),
+              padding: const EdgeInsets.only(top: 55.0),
               child: Column(
                 children: [
                   Center(
@@ -51,7 +86,7 @@ class _SignUpState extends State<SignUp> {
                       child: Container(
                         padding: EdgeInsets.symmetric(
                             vertical: 50.0, horizontal: 20.0),
-                        height: MediaQuery.of(context).size.height / 1.5,
+                        height: MediaQuery.of(context).size.height / 1.4,
                         width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
                             color: Colors.white,
