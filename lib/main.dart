@@ -1,6 +1,9 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/pages/chatpage.dart';
+import 'package:flutter_application_2/pages/home.dart';
+import 'package:flutter_application_2/pages/signin.dart';
 import 'package:flutter_application_2/pages/signup.dart';
 
 void main() async {
